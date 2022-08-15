@@ -1,6 +1,6 @@
 ## E-commerce React App
 
-To clone this directory, you can run: ### git clone [url]
+To clone this directory, you can run: ### `git clone [url]`
 
 ## Imported Libaries
 
