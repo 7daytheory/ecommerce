@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+## E-commerce React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To clone this directory, you can run:
+
+## Imported Libaries
+
+styled-components, Material-UI core, Material-UI icons
+
+### `npm i styled-components @mui/material @mui/styled @mui/icons @mui/react`
 
 ## Available Scripts
 
