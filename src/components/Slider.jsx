@@ -1,15 +1,19 @@
 import styled from "styled-components";
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import { useState } from "react";
+import { sliderItems } from "../data";
 
 const Container = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
     position: relative;
+    overflow: hidden;
 `;
 
 const Arrow = styled.div`
+    index: 2;
     width: 50px;
     height: 50px;
     background-color: #fff7f7;
@@ -29,6 +33,9 @@ const Arrow = styled.div`
 
   const Wrapper = styled.div`
     height: 100%;
+    display: flex;
+    transform: translateX(${(props) => props.slideIndex * -100}vw);
+    transition: all 1.5s ease;
   `;
 
   const Slide = styled.div`
@@ -36,6 +43,7 @@ const Arrow = styled.div`
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background-color: #${props => props.bg};
   `;
   const ImgContainer = styled.div`
     height: 100vh;
@@ -68,29 +76,37 @@ const Arrow = styled.div`
   `;
 
 const Slider = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const handleClick = (direction) => {
+      if(direction === "left") {
+        setSlideIndex(slideIndex > 0 ? slideIndex-1 : 3)
+      } else {
+        setSlideIndex(slideIndex < 2 ? slideIndex+1 : 0)
+      }
+  }
+
   return (
     <Container>
-        <Arrow direction="left">
-            <ArrowBackIosNewOutlinedIcon />
-            <Wrapper>
-              
-            </Wrapper>
+        <Arrow direction="left" onClick={() => handleClick("left")}>
+            <ArrowBackIosNewOutlinedIcon/>
         </Arrow>
-        <Wrapper>
-          <Slide>
+        <Wrapper slideIndex={slideIndex}>
+          {sliderItems.map((item) => (
+            <Slide bg={item.bg} key={item.id}>
             <ImgContainer>
-              <Image src="https://i.ibb.co/FW3Y4MM/kisspng-new-york-fashion-week-drawing-fashion-design-fashi-hand-painted-fashion-woman-5aa8189dd8fbd3.png" />
+              <Image src={item.img} />
             </ImgContainer>
             <InfoContainer>
-                <Title>Fashion Week</Title>
-                <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et architecto aperiam iste non ab excepturi placeat sapiente.</Desc>
+                <Title>{item.title}</Title>
+                <Desc>{item.desc}</Desc>
                 <Button>Show More</Button>
             </InfoContainer>
           </Slide>
+          ))}
         </Wrapper>
-        <Arrow direction="right">
+        <Arrow direction="right" onClick={() => handleClick("right")}>
             <ArrowForwardIosOutlinedIcon />
-            
         </Arrow>
     </Container>
   )
