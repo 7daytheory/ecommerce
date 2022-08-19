@@ -38,13 +38,11 @@ const Arrow = styled.div`
     height: 100vh;
   `;
   const ImgContainer = styled.div`
-    height: 100%;
-    flex: 1;
+    height: 100vh;
   `;
 
   const Image = styled.img`
     height: 80%;
-    max-width: 400px;
   `;
 
   const InfoContainer = styled.div`
@@ -81,11 +79,11 @@ const Slider = () => {
         <Wrapper>
           <Slide>
             <ImgContainer>
-              <Image src="https://i.ibb.co/94LjQ7q/chiefs.jpg" />
+              <Image src="https://i.ibb.co/FW3Y4MM/kisspng-new-york-fashion-week-drawing-fashion-design-fashi-hand-painted-fashion-woman-5aa8189dd8fbd3.png" />
             </ImgContainer>
             <InfoContainer>
-                <Title>Title Example</Title>
-                <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et architecto aperiam iste non ab excepturi placeat sapiente. Voluptate incidunt iusto dolore doloremque nam quas voluptas quisquam omnis velit placeat.</Desc>
+                <Title>Fashion Week</Title>
+                <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et architecto aperiam iste non ab excepturi placeat sapiente.</Desc>
                 <Button>Show More</Button>
             </InfoContainer>
           </Slide>
