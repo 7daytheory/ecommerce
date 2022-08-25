@@ -3,7 +3,6 @@ import { Badge } from '@mui/material'
 import React from 'react'
 import styled from 'styled-components'
 
-//Import styled from styled-components and you can store all youre styles within the Container(Div)
 const Container = styled.div`
     height: 60px;
 `
@@ -14,7 +13,6 @@ const Wrapper = styled.div`
     justify-content: space-between;
 `
 
-//Justify content left center right
 const Left = styled.div`
 flex:1;
 cursor: ponter;
@@ -60,7 +58,7 @@ const Nav = () => {
     <Container>
         <Wrapper>
             <Left>
-                <Language>EN</Language>
+                <Language>EN / FR</Language>
                 <SearchContainer>
                     <Search style={{color:'#999', fontSize:16}}/>
                     <Input />

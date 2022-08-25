@@ -32,7 +32,7 @@ export const sliderItems = [
 export const categories = [
     {
         id: 1,
-        img: "https://i.ibb.co/yN67WfM/hats.webp",
+        img: "https://i.ibb.co/yWSxzQb/images.jpg",
         title: "Jerseys",
     },
     {
@@ -42,7 +42,7 @@ export const categories = [
     },
     {
         id: 3,
-        img: "https://i.ibb.co/yN67WfM/hats.webp",
-        title: "Shoes",
+        img: "https://i.ibb.co/SKxDhtc/tickets.jpg",
+        title: "Tickets",
     }
 ]
