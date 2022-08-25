@@ -28,3 +28,26 @@ export const sliderItems = [
         bg: "fdr1ed"
     }
 ]
+
+export const categories = [
+    {
+        id: 1,
+        img: "https://i.ibb.co/FW3Y4MM/kisspng-new-york-fashion-week-drawing-fashion-design-fashi-hand-painted-fashion-woman-5aa8189dd8fbd3.png",
+        title: "Jerseys",
+    },
+    {
+        id: 2,
+        img: "https://i.ibb.co/FW3Y4MM/kisspng-new-york-fashion-week-drawing-fashion-design-fashi-hand-painted-fashion-woman-5aa8189dd8fbd3.png",
+        title: "Hats",
+    },
+    {
+        id: 3,
+        img: "https://i.ibb.co/FW3Y4MM/kisspng-new-york-fashion-week-drawing-fashion-design-fashi-hand-painted-fashion-woman-5aa8189dd8fbd3.png",
+        title: "Shoes",
+    },
+    {
+        id: 4,
+        img: "https://i.ibb.co/FW3Y4MM/kisspng-new-york-fashion-week-drawing-fashion-design-fashi-hand-painted-fashion-woman-5aa8189dd8fbd3.png",
+        title: "Other",
+    }
+]
