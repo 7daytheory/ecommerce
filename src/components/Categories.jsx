@@ -13,7 +13,6 @@ const Categories = () => {
             {categories.map(item =>(
                 <CategoryItem item={item}/>
             ))}
-
         </Container>
     )
 }

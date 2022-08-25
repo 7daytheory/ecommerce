@@ -67,7 +67,7 @@ const Nav = () => {
                 </SearchContainer>
             </Left>
             <Center>
-                <Logo>ECommerce App</Logo>
+                <Logo>Kansas City Chiefs</Logo>
             </Center>
             <Right>
                 <MenuItem>REGISTER</MenuItem>
